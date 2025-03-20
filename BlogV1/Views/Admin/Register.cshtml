@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Blogs";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Kullanıcı Kayıt</h1>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-download fa-sm text-white-50"></i> Rapor
+    </a>
+</div>
+<form action="/Admin/Register" method="post" class="user d-flex flex-column align-items-center p-5 shadow-lg rounded" style="max-width: 500px; margin: auto; background: #fff;">
+    <input type="text" class="form-control mb-3 p-4 fs-4" placeholder="İsim" name="name">
+    <input type="text" class="form-control mb-3 p-4 fs-4" placeholder="Soyisim" name="surname">
+    <input type="email" class="form-control mb-3 p-4 fs-4" placeholder="Email Adresi" name="email">
+    <input type="password" class="form-control mb-3 p-4 fs-4" placeholder="Şifre" name="password">
+    <input type="password" class="form-control mb-4 p-4 fs-4" placeholder="Şifre Tekrarı" name="repassword">
+    <button type="submit" class="btn btn-primary w-100 p-4 fs-4 fw-bold">
+        Kullanıcı Oluştur
+    </button>
+</form>
